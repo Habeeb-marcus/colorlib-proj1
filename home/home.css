@@ -1,0 +1,128 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --nav-background: #333333;
+    --background-primary: #58ff80;
+    --deep-black: #150303;
+    --menu-background: #222222;
+    --at-color:#928888;
+    --card-color: #212529;
+    --deep-background: #01ff56;
+    --top-nav-font: "open sans", sans-serif;
+}
+
+
+body {
+    font-family: "Chivo", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.flex-d {
+    display: flex;
+}
+
+
+.center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify{
+    justify-content: space-between;
+}
+
+.nav-container {
+    background: var(--nav-background);
+    height: 60px;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 60px;
+}
+
+.logo-cont img {
+        height: 34px;
+}
+
+.jacko-cont {
+        height: 100%;
+        margin-left: 25px;
+        background: #1d1c1cad;
+        width: 8rem;
+        color: #9B9B9B;
+        font-size: 18px;
+}
+
+.jacko {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+.nav-left,
+.nav-right {
+    height: 100%;
+}
+
+.nav-left {
+    margin-left: 2rem;
+}
+
+.nav-right {
+    height: 60px;
+    font-size: 27px;
+    color: #9B9B9B;
+}
+
+.nav-right ul li {
+    list-style: none;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    border-left: 1px solid;
+    justify-content: center;
+    width: 30px;
+    padding: 0 2rem;
+}
+
+
+.sect1-cont {
+    background: var(--background-primary) url(./images/xhero_right.png) no-repeat;
+    height: 100vh;
+
+}
+
+.section1-main {
+    display: flex;
+    padding: 0 2rem;
+}
+
+.bg-hero img {
+    margin-left: 20rem;
+    z-index: -9;
+}
+
+.sec1t-text h1 {
+        color: var(--deep-black);
+        font-size: 80px;
+        font-weight: 400;
+}
