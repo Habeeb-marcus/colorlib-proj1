@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Shippori+Mincho&display=swap');
+
 *,
 ::after,
 ::before {
@@ -215,13 +217,20 @@ font-weight: 500;
 }
 
 .top-sect {
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 .top-sect h2 {
-margin-top: 3rem;
+margin-top: 2rem;
 font-size: 40px;
 font-weight: 400;
+}
+
+.top-sect p {
+    color: var(--deep-background);
+    font-size: 18px;
+    font-weight: 400;
+
 }
 
 .btm-sect {
@@ -229,14 +238,108 @@ font-weight: 400;
 }
 
 .top-btn a {
-    color: #150303;
-    background: #01FF56;
+    color: var(--deep-black);
+    background: var(--deep-background);
     color: #150303 !important;
     border: 1px solid transparent;
     display: inline-block;
-    padding: 16px 44px;
+    padding: 18px 44px;
     text-transform: uppercase;
     font-size: 18px;
     border-radius: 0px;
     text-decoration: none;
+    margin-top: 3rem;
+}
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(1, 255, 86, 0.1)
+}
+
+.progress {
+    height: 8px;
+    width: 60%;
+    border-radius: 7px;
+    background: var(--deep-background);
+}
+
+.progress-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-cnt-left,
+.progress-cnt-right {
+    width: 48%;
+}
+
+.progress-count p {
+    text-align: start;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.single-skill {
+    margin-bottom: 1.5rem;
+}
+
+.p {
+    margin-top: 30px;
+}
+
+/* SECTION 3 */
+.sect3-exp {
+    background: #01FF56;
+    padding: 60px 65px 20px 65px;
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
+
+.sect3-text {
+    width: 46%;
+    flex-direction: column;
+    align-items: center;
+    align-self:center;
+}
+
+.exp1, .exp2, .exp3 {
+    font-size: 40px;
+}
+
+
+.exp2, .exp3 {
+        color: rgba(21, 3, 3, 0.3);
+        font-family: "Shippori Mincho", serif;
+        font-weight: 400;
+}
+.exp-cont h2 {
+    margin-bottom: 37px;
+}
+
+.section3-cont {
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+.sect3-main-cont {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.sect3-title h2 {
+    text-align:center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 40px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.sect3-main {
+    margin: 3rem auto;
 }
