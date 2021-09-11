@@ -324,9 +324,9 @@ font-weight: 400;
     padding-bottom:120px;
 }
 
-.sect3-main-cont {
-    padding-left: 8rem;
-    padding-right: 8rem;
+.sect3-main-cont, .section4 {
+    padding: 0 5rem;
+    /* padding-right: 8rem; */
 }
 
 .sect3-title h2 {
@@ -342,4 +342,88 @@ font-weight: 400;
 
 .sect3-main {
     margin: 3rem auto;
+}
+
+/* section 4 */
+
+.sect4-title {
+    font-size: 4.2rem;
+    font-family: "Shippori Mincho", serif;
+    color: var(--deep-black);
+    margin-bottom: 3rem;
+}
+
+.sect4-body {
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+
+    /* flex-direction: column; */
+}
+
+.detail-cont {
+    width: 75%;
+    margin-left: 13rem;
+    border-top: 1px solid #E2E2E2;
+    padding: 2em 0;
+           
+}
+.detail-left h3  {
+color: #150303;
+font-weight: 400;
+font-size: 30px;
+margin-bottom: 19px
+}
+
+.detail-left p {
+
+    font-weight: 300;
+    font-size: 16px;
+    color: #150303;
+    }
+
+.detail-top {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail p {
+    margin-top: 2rem;
+    font-size: 1.17rem;
+}
+
+
+.single-page {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+
+/* section 5 */
+
+.sect5 {
+    padding-top: 7rem;
+    background: var(--deep-background);
+}
+
+.sect5-img{
+    background: url(./images/visit.jpg);
+    height: 662px;
+    width: 80rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* content-visibility: auto; */
+    background-position: bottom;
+}
+
+.sect5-img img {
+    
+}
+
+.sect5-text p {
+    font-family: "Chivo", sans-serif;
+    color: #150303;
+    font-size: 40px;
+    font-weight: 300;
+    width: 66rem;
+    padding: 5rem;
+    letter-spacing: 9px;
 }
