@@ -1,0 +1,388 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.body-top{
+    display: flex;
+    height: 500px;
+    margin-bottom: 100px;
+    background: #5aff80;
+    /* background-size: 50pc;
+    z-index: 0;
+    background-repeat: no-repeat; */
+}
+
+.pic1{
+    margin-left: 36pc;
+    position: absolute;
+}
+
+.text1{
+    text-indent: 50px;
+    margin-top: 200px;
+    font-family: "Shippori Mincho",serif; 
+    font-size: 5pc;
+    font-weight: lighter;
+}
+
+.pic2{
+    position: relative;
+    margin-top: -100px
+}
+
+.whiteForm{
+    position: absolute;
+    width: 50pc;
+    height: 45pc;
+    top: 40pc;
+    left: 15pc;
+    background-color: white;
+}
+
+.smallText{
+    color: rgb(11, 255, 11);
+    margin-left: 20pc;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.mainText{
+    margin-left: 150px;
+    font-family: "Shippori Mincho",serif;
+    font-size: xx-large;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.middleText{
+    margin-left: 21px;
+}
+
+.formBtn{
+    height: 50px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(50, 241, 50);
+    margin-left: 18pc;
+    margin-top: 30px;
+    
+}
+
+.formBtn:hover{
+    background-color: white;
+    border: solid black 1px;
+    transition: .3s;
+}
+
+.num1{
+    color: rgb(229, 226, 226);
+    opacity: 0.5;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.stats{
+    display: flex;
+    margin-left: 100px;
+    gap: 9pc;
+}
+
+.num2{
+    border: 3px solid #01FF56;
+    border-radius: 3px;
+    width: 14pc;
+}
+
+.num3{
+    border: 3px solid #01FF56;
+    border-radius: 3px;
+}
+
+.num4{
+    border: 3px solid #01FF56;
+    border-radius: 3px;
+}
+
+.num5{
+    border: 3px solid #01FF56;
+    border-radius: 3px;
+    width: 14pc;
+}
+
+.formText{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.formSmall{
+    margin-left: 70px;
+}
+
+.bottom-Section{
+    margin-top: 100px;
+}
+
+h2{
+    font-family: "Shippori Mincho",serif;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-left: 90px;
+}
+
+.num6{
+    color: rgb(229, 226, 226);
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h3{
+    margin-left: 300px;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.infoColumn{
+    margin-left: 300px;
+    margin-bottom: 15px;
+}
+
+.infoColumn1{
+    margin-left: 29pc;
+    margin-top: 10px;
+}
+
+.textWrap{
+    margin-left: 300px;
+}
+
+.middleSect{
+    background-color: rgb(53, 243, 69);
+    height: 39pc;
+    width: 100%;
+    position: absolute;
+}
+
+.pic3{
+    margin-top: 5.4pc;
+}
+
+.pic3Txt{
+    float: right;
+    margin-right: 90px;
+    font-family: "Chivo",sans-serif;
+    font-size: xx-large;
+    line-height: 1.4;
+    font-weight: lighter;
+    margin-top: 80px;    
+}
+
+.bottom{
+    margin-top: 48pc;
+}
+
+.num6a{
+    color: rgb(229, 226, 226);
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 240px;
+}
+
+.at{
+    color: gray;
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: #01ff56;
+    height: 100%;
+    width: 100%;
+}
+
+.footerTxt{
+    font-family: "Shippori Mincho",serif;
+    margin-left: 200px;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-top: 7pc;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.br2{
+    margin-left: 200px;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    opacity: 0.2;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+}
+
+.last{
+    margin-top: 27pc;
+    margin-left: 20pc;
+}
+
+input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(21,3,3,.4);
+    width: 30pc;
+    text-transform: capitalize;
+}
+
+.no-outline{
+    margin-top: 50px;
+}
+
+.no-outline:focus{
+    outline: none;
+}
+
+.forms{
+    margin-left: 130px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.information{
+    float: right;
+    margin-right: 180px;
+}
+
+.bottombtn{
+    margin-left: 18pc;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+/* .bottombtn:hover{
+    background: white;
+} */
+  background: linear-gradient(to right, white 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+}
+
+.bottombtn:hover {
+  background-position: left bottom;
+  color: black;
+}
+
+.last-res{
+    display: flex;
+    gap: 150px;
+}
+
+.info1{
+    margin-bottom: 25px;
+}
+
+li{
+    list-style: none;
+    line-height: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.sidebtn{
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    color: black;
+    background: linear-gradient(to right, black 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+.sidebtn:hover{
+    background-position: left bottom;
+    color: white;
+}
+
+.icons{
+    margin-top: 50px;
+}
+
+.icon1:hover{
+    cursor: pointer;
+    background-color: black;
+    transform: scaleX(-1);
+    color: white;
+}
+
+.icon2:hover{
+    cursor: pointer;
+    transform: scaleX(-1);
+    color: white;
+}
+
+.icon3:hover{
+    cursor: pointer;
+    transform: scaleX(-1);
+    color: white;
+}
+
+
+.icon1{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+    /* margin-right: 10px; */
+
+}
+
+.icon2{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.icon3{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+}
+
+.iconcont1{
+    border-radius: 70%;
+}
+
