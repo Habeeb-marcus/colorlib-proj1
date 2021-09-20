@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Shippori+Mincho&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;&family=Shippori+Mincho:wght@400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Shippori+Mincho:wght@&display=swap'); */
 
 *,
 ::after,
@@ -55,7 +57,7 @@ body {
     background: var(--nav-background);
     max-height: 60px;
     z-index: 22;
-    position: relative;
+    position: fixed;
 }
 
 .nav-bar {
@@ -81,6 +83,18 @@ body {
     text-transform: uppercase;
     margin-left: 8px;
 }
+
+.sticky {
+    background: #58ff80;
+    position: fixed;
+    top: 56px;
+    z-index: 100;
+    padding: 0 98px;
+    border-bottom: 1px solid var(--nav-background);
+    width: 100%;
+    display: none;
+}
+
 
 .nav-left,
 .nav-right {
@@ -124,8 +138,7 @@ body {
 
 /* header */
 .main-header {
-    padding: 0 98px;
-    position: sticky;
+    padding: 60px 188px 0;
     border-bottom: 1px solid var(--nav-background);
 }
 
@@ -149,6 +162,10 @@ font-weight: 500;
     font-size: 20px;
 }
 
+.header-ul li:nth-child(1) {
+    border-left: 1px solid var(--nav-background);
+}
+
 .header-ul li:not(:last-child) {
     border-right: 1px solid var(--nav-background);
 }
@@ -157,11 +174,17 @@ font-weight: 500;
 
 
 .sect1-cont {
-    background: var(--background-primary) url(./images/xhero_right.png) no-repeat right;
+    /* background: var(--background-primary) url(./images/xhero_right.png) no-repeat right;
     background-size: 80%;
     height: 100vh;
     background-position-x: 26.5em;
-    background-position-y: 0rem;
+    background-position-y: 0rem; */
+
+        background: var(--background-primary) url(./images/xhero_right.png) no-repeat right;
+        background-size: 85%;
+        height: 120vh;
+        background-position-x: 26.5em;
+        background-position-y: 4rem;
 }
 
 /* .section1-main {
@@ -196,6 +219,13 @@ font-weight: 500;
     background: transparent;
     font-size: 27px;
     font-weight: 500;
+    transition: ease-out .3s;
+}
+
+.sect1-btn:hover {
+    box-shadow: inset 300px 0 0 0 #000;
+    color: #fff;
+    cursor: pointer;
 }
 
 
@@ -243,12 +273,19 @@ font-weight: 400;
     color: #150303 !important;
     border: 1px solid transparent;
     display: inline-block;
-    padding: 18px 44px;
+    padding: 17px 44px;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 21px;
     border-radius: 0px;
     text-decoration: none;
     margin-top: 3rem;
+    transition: ease-out .3s;
+}
+
+.top-btn a:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000;
 }
 
 .progress-bar {
@@ -259,10 +296,42 @@ font-weight: 400;
 
 .progress {
     height: 8px;
-    width: 60%;
+    width: 80%;
     border-radius: 7px;
     background: var(--deep-background);
+    /* animation: fillbars 2.5s 1; */
 }
+
+.progress-anim {
+        animation: fillbars 2.5s 1;
+}
+
+
+@keyframes fillbars {
+    from{
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+.pg1 {
+ /* height: 8px;
+ border-radius: 7px;
+ background: var(--deep-background); */
+ /* width: 60%; */
+}
+
+/* .pg2 {
+    width: 70%;
+}
+.pg3 {
+    width: 80%;
+}
+.pg4 {
+    width: 90%;
+} */
 
 .progress-main {
     display: flex;
@@ -321,7 +390,7 @@ font-weight: 400;
 
 .section3-cont {
     padding-top:120px;
-    padding-bottom:120px;
+    padding-bottom:80px;
 }
 
 .sect3-main-cont, .section4 {
@@ -346,16 +415,17 @@ font-weight: 400;
 
 /* section 4 */
 
-.sect4-title {
+.sect4-title,
+.sect6-title {
     font-size: 4.2rem;
     font-family: "Shippori Mincho", serif;
     color: var(--deep-black);
     margin-bottom: 3rem;
+    font-weight: 400
 }
-
 .sect4-body {
     justify-content: flex-end;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 
     /* flex-direction: column; */
 }
@@ -407,23 +477,352 @@ margin-bottom: 19px
 .sect5-img{
     background: url(./images/visit.jpg);
     height: 662px;
-    width: 80rem;
+    width: 53%;
     background-repeat: no-repeat;
     background-size: cover;
     /* content-visibility: auto; */
     background-position: bottom;
 }
 
-.sect5-img img {
+
+.sect5-text {
+        width: 47%;
+        display: flex;
+        align-items: center;
+}
+.sect5-text p {
+      font-family: "Chivo",sans-serif;
+      color: #150303;
+      font-size: 37px;
+      font-weight: 300;
+      width: 48rem;
+      padding: 4rem;
+      letter-spacing: 2px;
+}
+
+/* section 6 */
+.section6 {
+    padding: 120px 80px;
+}
+
+.sect6-body {
+        justify-content: flex-end;
+        padding-bottom: 8rem;
+}
+
+.sect6-inner {
+    border-top: 1px solid #E2E2E2;
+}
+
+
+/* section 7 */
+
+.sect7-main {
+    width: 100vw;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+}
+
+
+.single-img {
+    width: 25%;
+    position: relative;
+}
+
+.single-img::before {
+    content: '';
+    position: absolute;
+    background: rgb(10 7 7 / 28%);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.single-img:hover::before,
+.single-img:hover .add{
+     visibility: visible;
+     opacity: 1;
+}
+.single-img img {
+    width: 100%;
+}
+
+.add {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+
+
+/* footer */
+
+.footer-main {
+    background: #01ff56;
+    padding: 6rem 4.8rem 0;
+}
+
+.footer-top-main h2 {
+    font-size: 40px;
+}
+
+
+.footer-top {
+    padding: 0 12rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid dimgray;
+}
+
+
+.footer-bottom {
+
+}
+.border-top {
+     padding-top: 80px;
+     justify-content: space-between;
+     width: 100%;
+   }
+
+.form {
+    flex-direction: column;
+}
+
+.form h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Chivo",sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.form-cont {
+    width: 50%;
+}
+
+.input {
+    margin-bottom: 23px;
+    /* border-bottom: 1px solid rgba(21, 3, 3, 0.4); */
+    position: relative;
+
+}
+
+
+.input input {
+    width: 100%;
+    height: 3.7rem;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(21, 3, 3, 0.4);
+    /* padding-top: 24px 0; */
+    font-weight: 400;
+    color: #150303;
+    font-size: 20px;
+
+}
+
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+
+
+.input textarea {
+    border: none;
+    outline: none;
+    font-size: 19px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(21, 3, 3, .4);
+    background: none;
+    width: 100%;
+    margin-top: 35px;
+}
+
+/* .input input:active,
+.input input:focus {
+    border: none;
+} */
+
+.mail-cont {
+    justify-content: flex-end;
+}
+
+.mail {
+    text-decoration: none;
+    /* border: 1px solid var(--deep-black); */
+    padding: 20px 65px;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    font-family: "Shippori Mincho",
+    serif;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-out .3s;
+    outline: none;
+}
+
+.mail:hover {
+    box-shadow: inset 300px 0 0 0 #fff;
+    color: #000;
+    cursor: pointer;
+
     
 }
 
-.sect5-text p {
-    font-family: "Chivo", sans-serif;
-    color: #150303;
-    font-size: 40px;
-    font-weight: 300;
-    width: 66rem;
-    padding: 5rem;
-    letter-spacing: 9px;
+.contact-me {
+    width: 30%;
+    flex-direction: column;
+}
+
+.contact-me h4 {
+    font-family: "Chivo",sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--deep-black);
+}
+
+.contact-me ul li,
+.contact-me ul li a
+    {
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    color: var(--deep-black);
+}
+
+.contact-me ul li .location {
+    text-decoration: underline;
+}
+
+.link,
+.location {
+    text-decoration: underline transparent;
+    font-size: 20px;
+}
+
+.link:hover {
+    text-decoration: underline ;
+    padding-left: 2px;
+
+}
+
+.location {
+    text-decoration: underline;
+}
+
+.contact-me ul li{
+    margin-bottom: 17px;
+    /* font-size: 16px; */
+    
+}
+
+.contact-me ul {
+    margin-top: 23px;
+}
+
+
+/* submit resume */
+.resume {
+    /* padding: 23px 17px; */
+       width: 260px;
+       height: 60px;
+       border: 1px solid #150303;
+       margin-top: 20px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       box-shadow: inset 0 0 0 0 #fff;
+       /* position: relative; */
+       /* z-index: 1; */
+       /* overflow-x: hidden; */
+     
+
+    /*background: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all ease-in-out 3s;
+    transform: translateX(0);
+    */
+    
+}
+
+.resume:hover {
+
+}
+
+/* .resume::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+} */
+
+/* .resume  {
+    font-size: 18px;
+    color: var(--deep-black);
+    transition: all ease-in-out 3s;
+    
+}
+
+*/
+
+.resume:hover::before {
+    /* background: #000; */
+    color: #fff;
+    transform: translateX(0);
+    z-index: -1;
+} 
+
+/* footer-social */
+
+.footer-social {
+    margin-top: 32px;
+
+}
+
+.footer-social a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFF;
+    height: 12rem;
+    background: rgba(21, 3, 3, 0.1);
+    margin-right: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.footer-social a:hover {
+    background: #000;
+    transform: rotateX(180deg);
+
+}
+
+.footer-border {
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+
+}
+
+.footer-border p {
+    text-align: center;
 }
