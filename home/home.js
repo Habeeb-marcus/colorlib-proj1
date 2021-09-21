@@ -1,8 +1,9 @@
 const sticky = document.querySelector('.sticky');
-const progress = document.querySelector('.progress');
+const progress = document.querySelectorAll('.progress');
+const progressSection = document.querySelector('.sect2-main');
 
 
-window.onscroll = function() {scrollFunction(), showProg()};
+window.onscroll = function() {scrollFunction()};
 
 
 function scrollFunction() {
@@ -12,6 +13,38 @@ function scrollFunction() {
    sticky.style.display = "none";
   }
 }
+
+
+function showProgress() {
+  progress.forEach(progressBar => {
+    const value = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${value}%`;
+
+    // console.log(value)
+  })
+}
+
+function hiddenProgress() {
+  progress.forEach(p => {
+    p.style.opacity = 0;
+    p.style.with = 0;
+  })
+}
+
+window.addEventListener('scroll', () => {
+  const sectionPos = progressSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 2;
+
+  if(sectionPos <  screenPos){
+    showProgress();
+    console.log('show');
+  }
+  else {
+    hideProgress();
+    console.log('hide');
+  }
+})
 
 // function showProg() {
 //     if (document.documentElement.scrollTop > 800) {

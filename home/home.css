@@ -220,6 +220,8 @@ font-weight: 500;
     font-size: 27px;
     font-weight: 500;
     transition: ease-out .3s;
+    border: none;
+    border: 1px solid var(--deep-black);
 }
 
 .sect1-btn:hover {
@@ -290,19 +292,23 @@ font-weight: 400;
 
 .progress-bar {
     height: 8px;
+    position: relative;
     border-radius: 4px;
     background: rgba(1, 255, 86, 0.1)
 }
 
 .progress {
-    height: 8px;
-    width: 80%;
-    border-radius: 7px;
+    height: 100%;
+    width: 0%;
+    opacity: 0; 
+    /* position: relative; */
+    border-radius: 4px;
     background: var(--deep-background);
+    transition: all 1.5s;
     /* animation: fillbars 2.5s 1; */
 }
 
-.progress-anim {
+/* .progress-anim {
         animation: fillbars 2.5s 1;
 }
 
@@ -314,7 +320,7 @@ font-weight: 400;
     to {
         width: 80%;
     }
-}
+} */
 
 .pg1 {
  /* height: 8px;
