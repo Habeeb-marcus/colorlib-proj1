@@ -2,6 +2,8 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .body-top{
@@ -92,17 +94,20 @@ body{
 }
 
 .num2{
-    border: 3px solid #01FF56;
+    background-color: #d2fffd;
     border-radius: 3px;
     width: 14pc;
+    margin-top: 10px;
 }
 
 .num3{
     border: 3px solid #01FF56;
     border-radius: 3px;
+    width: 8pc;
+    margin-bottom: 10px;
 }
 
-.num4{
+/* .num4{
     border: 3px solid #01FF56;
     border-radius: 3px;
 }
@@ -111,7 +116,7 @@ body{
     border: 3px solid #01FF56;
     border-radius: 3px;
     width: 14pc;
-}
+} */
 
 .formText{
     margin-top: 50px;
@@ -199,6 +204,7 @@ h3{
 
 .at{
     color: gray;
+    margin-right: 3px;
 }
 
 .footer{
@@ -232,7 +238,7 @@ h3{
 }
 
 .last{
-    margin-top: 27pc;
+    margin-top: 80px;
     margin-left: 20pc;
 }
 
@@ -312,7 +318,7 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    text-decoration: underline 1px solid black;
 }
 
 .sidebtn{
@@ -384,5 +390,15 @@ a:hover{
 
 .iconcont1{
     border-radius: 70%;
+}
+
+.external-link{
+    font-size: medium;
+}
+
+.external-link:hover{
+    color: rgb(15, 224, 15);
+    cursor: pointer;
+    transition: .5s;
 }
 
