@@ -90,10 +90,29 @@ body {
     top: 56px;
     z-index: 100;
     padding: 0 98px;
-    border-bottom: 1px solid var(--nav-background);
+    border-bottom: 1px solid #9a9a9a82;
     width: 100%;
     display: none;
 }
+
+.sticky .header-ul li a,
+.header-ul .header-btn {
+    text-decoration:  none;
+    color: var(--deep-black);
+}
+
+.sticky .header-ul .header-btn,
+.main-header .header-ul .header-btn{
+    /* border-bottom: 1px solid #222222; */
+    text-decoration: underline;
+}
+
+
+
+.sticky .header-ul li:hover {
+    background: #00E64D;
+}
+
 
 
 .nav-left,
@@ -116,16 +135,28 @@ body {
     height: 60px;
     align-items: center;
     display: flex;
-    border-left: 1px solid;
+    border-left: 1px solid #4c4b4b;
     justify-content: center;
     width: 30px;
     padding: 0 2rem;
+    font-size: 24px;
+}
+
+.nav-right ul .active {
+    background: #7ac64e;
+    color: #fff;
 }
 
 
+.nav-right ul li:hover {
+    background: var(--deep-black);
+    color: #fff;
+}
+
 .bg-hero img {
-    margin-left: 20rem;
-    z-index: -9;
+     margin-left: 32rem;
+     margin-top: -47rem;
+    animation: zoom-in-zoom-out 3s ease-in-out ;
 }
 
 .sec1t-text h1 {
@@ -139,7 +170,7 @@ body {
 /* header */
 .main-header {
     padding: 60px 188px 0;
-    border-bottom: 1px solid var(--nav-background);
+    border-bottom: 1px solid #9a9a9a82;
 }
 
 .header {
@@ -158,16 +189,19 @@ font-weight: 500;
 
 .header-ul li {
     list-style: none;
-    padding: 34px 42px;
-    font-size: 20px;
+    /* padding: 34px 42px;
+    font-size: 20px; */
+    padding: 2.7rem;
+    font-size: 1.4rem;
+    /* border-bottom: 1px solid #9a9a9a82; */
 }
 
 .header-ul li:nth-child(1) {
-    border-left: 1px solid var(--nav-background);
+    border-left: 1px solid #9a9a9a82;
 }
 
 .header-ul li:not(:last-child) {
-    border-right: 1px solid var(--nav-background);
+    border-right: 1px solid #9a9a9a82;
 }
 
 /* section 1 body */
@@ -180,11 +214,27 @@ font-weight: 500;
     background-position-x: 26.5em;
     background-position-y: 0rem; */
 
-        background: var(--background-primary) url(./images/xhero_right.png) no-repeat right;
+        /* background: var(--background-primary) url(./images/xhero_right.png) no-repeat right; */
+        background: var(--background-primary);
         background-size: 85%;
         height: 120vh;
         background-position-x: 26.5em;
         background-position-y: 4rem;
+        
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+
+    /* 100% {
+        transform: scale(1, 1);
+    } */
 }
 
 /* .section1-main {
@@ -195,6 +245,10 @@ font-weight: 500;
     position: relative;
     margin-top: 8rem;
     padding: 0 6rem;
+}
+
+.sect1-text {
+    z-index: 10000000;
 }
 
 
