@@ -1,8 +1,10 @@
 const sticky = document.querySelector('.sticky');
 const progress = document.querySelectorAll('.progress');
 const progressSection = document.querySelector('.sect2-main');
+const subBlog = document.querySelector('.sub-blog');
 
 
+// TO DISPLAY HIDDEN NAVIGATION BAR
 window.onscroll = function() {scrollFunction()};
 
 
